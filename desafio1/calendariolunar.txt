@@ -1,0 +1,109 @@
+
+Nicolas@DESKTOP-8C3FNF6 MINGW64 ~/Desktop/Bootcamp Full Stack Python/M6/Repositorio Django/desafio1-venvDJANGO
+$ virtualenv calendariolunar --python=python3
+created virtual environment CPython3.12.2.final.0-64 in 1187ms
+  creator CPython3Windows(dest=C:\Users\Nicolas\Desktop\Bootcamp Full Stack Python\M6\Repositorio Django\desafio1-venvDJANGO\calendariolunar, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, via=copy, app_data_dir=C:\Users\Nicolas\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==24.0
+  activators BashActivator,BatchActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+
+Nicolas@DESKTOP-8C3FNF6 MINGW64 ~/Desktop/Bootcamp Full Stack Python/M6/Repositorio Django/desafio1-venvDJANGO
+$ source ./calendariolunar//Scripts/activate
+(calendariolunar) 
+Nicolas@DESKTOP-8C3FNF6 MINGW64 ~/Desktop/Bootcamp Full Stack Python/M6/Repositorio Django/desafio1-venvDJANGO
+$ python -m pip freeze > requirements_calendariolunar.txt
+(calendariolunar) 
+Nicolas@DESKTOP-8C3FNF6 MINGW64 ~/Desktop/Bootcamp Full Stack Python/M6/Repositorio Django/desafio1-venvDJANGO
+$ source ./calendariolunar/Scripts/activate
+(calendariolunar) 
+Nicolas@DESKTOP-8C3FNF6 MINGW64 ~/Desktop/Bootcamp Full Stack Python/M6/Repositorio Django/desafio1-venvDJANGO
+$ python -m pip freeze > requirements_calendariolunar.txt
+(calendariolunar) 
+Nicolas@DESKTOP-8C3FNF6 MINGW64 ~/Desktop/Bootcamp Full Stack Python/M6/Repositorio Django/desafio1-venvDJANGO
+$ pip install -r requirements_calendariolunar.txt
+(calendariolunar) 
+Nicolas@DESKTOP-8C3FNF6 MINGW64 ~/Desktop/Bootcamp Full Stack Python/M6/Repositorio Django/desafio1-venvDJANGO
+$ pip install asgiref==3.4.1
+Collecting asgiref==3.4.1
+  Downloading asgiref-3.4.1-py3-none-any.whl.metadata (9.2 kB)
+Downloading asgiref-3.4.1-py3-none-any.whl (25 kB)
+Installing collected packages: asgiref
+Successfully installed asgiref-3.4.1
+(calendariolunar) 
+Nicolas@DESKTOP-8C3FNF6 MINGW64 ~/Desktop/Bootcamp Full Stack Python/M6/Repositorio Django/desafio1-venvDJANGO
+$ pip install -r requirements_calendariolunar.txt
+ERROR: Could not open requirements file: [Errno 2] No such file or directory: 'requirements_calendariolunar.txt'
+(calendariolunar) 
+Nicolas@DESKTOP-8C3FNF6 MINGW64 ~/Desktop/Bootcamp Full Stack Python/M6/Repositorio Django/desafio1-venvDJANGO
+$ pip install -r requirements_calendariolunar.txt
+Requirement already satisfied: asgiref==3.4.1 in c:\users\nicolas\desktop\bootcamp full stack python\m6\repositorio django\desafio1-venvdjango\calendariolunar\lib\site-packages (from -r requirements_calendariolunar.txt (line 1)) (3.4.1)
+Collecting astral==2.2 (from -r requirements_calendariolunar.txt (line 2))
+  Downloading astral-2.2-py2.py3-none-any.whl.metadata (1.5 kB)
+Collecting certifi==2021.5.30 (from -r requirements_calendariolunar.txt (line 3))
+  Downloading certifi-2021.5.30-py2.py3-none-any.whl.metadata (3.0 kB)
+Collecting chardet==4.0.0 (from -r requirements_calendariolunar.txt (line 4))
+  Downloading chardet-4.0.0-py2.py3-none-any.whl.metadata (3.5 kB)
+Collecting charset-normalizer==2.0.5 (from -r requirements_calendariolunar.txt (line 5))
+  Downloading charset_normalizer-2.0.5-py3-none-any.whl.metadata (11 kB)
+Collecting Django==3.2.7 (from -r requirements_calendariolunar.txt (line 6))
+  Downloading Django-3.2.7-py3-none-any.whl.metadata (3.9 kB)
+Collecting django-debug-toolbar==3.2.2 (from -r requirements_calendariolunar.txt (line 7))
+  Downloading django_debug_toolbar-3.2.2-py3-none-any.whl.metadata (3.3 kB)
+Collecting django-mathfilters==0.4.0 (from -r requirements_calendariolunar.txt (line 8))
+  Downloading django_mathfilters-0.4.0-py2.py3-none-any.whl.metadata (3.8 kB)
+Collecting djangorestframework==3.12.4 (from -r requirements_calendariolunar.txt (line 9))
+  Downloading djangorestframework-3.12.4-py3-none-any.whl.metadata (9.9 kB)
+Collecting gunicorn==20.1.0 (from -r requirements_calendariolunar.txt (line 10))
+  Downloading gunicorn-20.1.0-py3-none-any.whl.metadata (3.8 kB)
+Collecting idna==2.7 (from -r requirements_calendariolunar.txt (line 11))
+  Downloading idna-2.7-py2.py3-none-any.whl.metadata (8.9 kB)
+Collecting python-dateutil==2.8.0 (from -r requirements_calendariolunar.txt (line 12))
+  Downloading python_dateutil-2.8.0-py2.py3-none-any.whl.metadata (7.6 kB)
+Collecting pytz==2018.4 (from -r requirements_calendariolunar.txt (line 13))
+  Downloading pytz-2018.4-py2.py3-none-any.whl.metadata (20 kB)
+Collecting requests==2.26.0 (from -r requirements_calendariolunar.txt (line 14))
+  Downloading requests-2.26.0-py2.py3-none-any.whl.metadata (4.8 kB)
+Collecting six==1.12.0 (from -r requirements_calendariolunar.txt (line 15))
+  Downloading six-1.12.0-py2.py3-none-any.whl.metadata (1.9 kB)
+Collecting sqlparse==0.2.4 (from -r requirements_calendariolunar.txt (line 16))
+  Downloading sqlparse-0.2.4-py2.py3-none-any.whl.metadata (2.2 kB)
+Collecting urllib3==1.24.2 (from -r requirements_calendariolunar.txt (line 17))
+  Downloading urllib3-1.24.2-py2.py3-none-any.whl.metadata (35 kB)
+Collecting whitenoise==5.3.0 (from -r requirements_calendariolunar.txt (line 18))
+  Downloading whitenoise-5.3.0-py2.py3-none-any.whl.metadata (3.3 kB)
+Collecting setuptools>=3.0 (from gunicorn==20.1.0->-r requirements_calendariolunar.txt (line 10))
+  Using cached setuptools-69.5.1-py3-none-any.whl.metadata (6.2 kB)
+Downloading astral-2.2-py2.py3-none-any.whl (30 kB)
+Downloading certifi-2021.5.30-py2.py3-none-any.whl (145 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 145.5/145.5 kB 8.5 MB/s eta 0:00:00
+Downloading chardet-4.0.0-py2.py3-none-any.whl (178 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 178.7/178.7 kB 11.2 MB/s eta 0:00:00
+Downloading charset_normalizer-2.0.5-py3-none-any.whl (37 kB)
+Downloading Django-3.2.7-py3-none-any.whl (7.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.9/7.9 MB 8.4 MB/s eta 0:00:00
+Downloading django_debug_toolbar-3.2.2-py3-none-any.whl (200 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 200.8/200.8 kB 12.7 MB/s eta 0:00:00
+Downloading django_mathfilters-0.4.0-py2.py3-none-any.whl (7.6 kB)
+Downloading djangorestframework-3.12.4-py3-none-any.whl (957 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 957.7/957.7 kB 30.6 MB/s eta 0:00:00
+Downloading gunicorn-20.1.0-py3-none-any.whl (79 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 79.5/79.5 kB 4.6 MB/s eta 0:00:00
+Downloading idna-2.7-py2.py3-none-any.whl (58 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.2/58.2 kB 3.2 MB/s eta 0:00:00
+Downloading python_dateutil-2.8.0-py2.py3-none-any.whl (226 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 226.8/226.8 kB 13.5 MB/s eta 0:00:00
+Downloading pytz-2018.4-py2.py3-none-any.whl (510 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 510.9/510.9 kB ? eta 0:00:00
+Downloading requests-2.26.0-py2.py3-none-any.whl (62 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.3/62.3 kB 3.3 MB/s eta 0:00:00
+Downloading six-1.12.0-py2.py3-none-any.whl (10 kB)
+Downloading sqlparse-0.2.4-py2.py3-none-any.whl (38 kB)
+Downloading urllib3-1.24.2-py2.py3-none-any.whl (131 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 131.7/131.7 kB ? eta 0:00:00
+Downloading whitenoise-5.3.0-py2.py3-none-any.whl (19 kB)
+Using cached setuptools-69.5.1-py3-none-any.whl (894 kB)
+Installing collected packages: sqlparse, pytz, idna, django-mathfilters, certifi, whitenoise, urllib3, six, setuptools, Django, charset-normalizer, chardet, astral, requests, python-dateutil, gunicorn, djangorestframework, django-debug-toolbar
+Successfully installed Django-3.2.7 astral-2.2 certifi-2021.5.30 chardet-4.0.0 charset-normalizer-2.0.5 django-debug-toolbar-3.2.2 django-mathfilters-0.4.0 djangorestframework-3.12.4 gunicorn-20.1.0 idna-2.7 python-dateutil-2.8.0 pytz-2018.4 requests-2.26.0 setuptools-69.5.1 six-1.12.0 sqlparse-0.2.4 urllib3-1.24.2 whitenoise-5.3.0
+(calendariolunar) 
+Nicolas@DESKTOP-8C3FNF6 MINGW64 ~/Desktop/Bootcamp Full Stack Python/M6/Repositorio Django/desafio1-venvDJANGO
+$

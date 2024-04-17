@@ -1,0 +1,34 @@
+
+Nicolas@DESKTOP-8C3FNF6 MINGW64 ~/Desktop/Bootcamp Full Stack Python/M6/Repositorio Django/desafio1-venvDJANGO
+$ virtualen taller --python=python3
+bash: virtualen: command not found
+
+Nicolas@DESKTOP-8C3FNF6 MINGW64 ~/Desktop/Bootcamp Full Stack Python/M6/Repositorio Django/desafio1-venvDJANGO
+$ virtualenv taller --python=python3
+created virtual environment CPython3.12.2.final.0-64 in 1219ms
+  creator CPython3Windows(dest=C:\Users\Nicolas\Desktop\Bootcamp Full Stack Python\M6\Repositorio Django\desafio1-venvDJANGO\taller, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, via=copy, app_data_dir=C:\Users\Nicolas\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==24.0
+  activators BashActivator,BatchActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+
+Nicolas@DESKTOP-8C3FNF6 MINGW64 ~/Desktop/Bootcamp Full Stack Python/M6/Repositorio Django/desafio1-venvDJANGO
+$ source ./taller/Scripts/activate
+(taller) 
+Nicolas@DESKTOP-8C3FNF6 MINGW64 ~/Desktop/Bootcamp Full Stack Python/M6/Repositorio Django/desafio1-venvDJANGO
+$ pip install pytz==2019.3
+Collecting pytz==2019.3
+  Downloading pytz-2019.3-py2.py3-none-any.whl.metadata (20 kB)
+Downloading pytz-2019.3-py2.py3-none-any.whl (509 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 509.2/509.2 kB 4.6 MB/s eta 0:00:00
+Installing collected packages: pytz
+Successfully installed pytz-2019.3
+(taller) 
+Nicolas@DESKTOP-8C3FNF6 MINGW64 ~/Desktop/Bootcamp Full Stack Python/M6/Repositorio Django/desafio1-venvDJANGO
+$ python -m pip freeze > requirements.txt
+(taller) 
+Nicolas@DESKTOP-8C3FNF6 MINGW64 ~/Desktop/Bootcamp Full Stack Python/M6/Repositorio Django/desafio1-venvDJANGO
+$ pip install -r requirements.txt
+Requirement already satisfied: pytz==2019.3 in c:\users\nicolas\desktop\bootcamp full stack python\m6\repositorio django\desafio1-venvdjango\taller\lib\site-packages (from -r requirements.txt (line 1)) (2019.3)
+(taller) 
+Nicolas@DESKTOP-8C3FNF6 MINGW64 ~/Desktop/Bootcamp Full Stack Python/M6/Repositorio Django/desafio1-venvDJANGO
+$

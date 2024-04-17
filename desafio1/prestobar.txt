@@ -1,0 +1,33 @@
+
+Nicolas@DESKTOP-8C3FNF6 MINGW64 ~/Desktop/Bootcamp Full Stack Python/M6/Repositorio Django/desafio1-venvDJANGO
+$ virtualenv prestobar --python=python3
+created virtual environment CPython3.12.2.final.0-64 in 1335ms
+  creator CPython3Windows(dest=C:\Users\Nicolas\Desktop\Bootcamp Full Stack Python\M6\Repositorio Django\desafio1-venvDJANGO\prestobar, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, via=copy, app_data_dir=C:\Users\Nicolas\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==24.0
+  activators BashActivator,BatchActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+
+Nicolas@DESKTOP-8C3FNF6 MINGW64 ~/Desktop/Bootcamp Full Stack Python/M6/Repositorio Django/desafio1-venvDJANGO
+$ source ./prestobar/Scripts/activate
+(prestobar) 
+Nicolas@DESKTOP-8C3FNF6 MINGW64 ~/Desktop/Bootcamp Full Stack Python/M6/Repositorio Django/desafio1-venvDJANGO
+$ pip install astral
+Collecting astral
+  Downloading astral-3.2-py3-none-any.whl.metadata (1.7 kB)
+Collecting tzdata (from astral)
+  Using cached tzdata-2024.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Downloading astral-3.2-py3-none-any.whl (38 kB)
+Using cached tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+Installing collected packages: tzdata, astral
+Successfully installed astral-3.2 tzdata-2024.1
+(prestobar) 
+Nicolas@DESKTOP-8C3FNF6 MINGW64 ~/Desktop/Bootcamp Full Stack Python/M6/Repositorio Django/desafio1-venvDJANGO
+$ python -m pip freeze > requirements.txt
+(prestobar) 
+Nicolas@DESKTOP-8C3FNF6 MINGW64 ~/Desktop/Bootcamp Full Stack Python/M6/Repositorio Django/desafio1-venvDJANGO
+$ pip install -r requirements.txt
+Requirement already satisfied: astral==3.2 in c:\users\nicolas\desktop\bootcamp full stack python\m6\repositorio django\desafio1-venvdjango\prestobar\lib\site-packages (from -r requirements.txt (line 1)) (3.2)
+Requirement already satisfied: tzdata==2024.1 in c:\users\nicolas\desktop\bootcamp full stack python\m6\repositorio django\desafio1-venvdjango\prestobar\lib\site-packages (from -r requirements.txt (line 2)) (2024.1)
+(prestobar) 
+Nicolas@DESKTOP-8C3FNF6 MINGW64 ~/Desktop/Bootcamp Full Stack Python/M6/Repositorio Django/desafio1-venvDJANGO
+$to
